@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="chat-container">
+    <div id="chat-container">
         <h2>Chatbot PHP-Geminis API</h2>
         <div id="chat-box"></div>
         <div class="input-container">
