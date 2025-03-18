@@ -1,6 +1,6 @@
 <?php
-    $api_key = "";
-    $url = "";
+    $api_key = "AIzaSyADDGNPpRPm1Fr6kdzY3aXhzsz-zuy2gvY";
+    $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$api_key";
 
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json");
@@ -47,5 +47,5 @@
     }
 
     $ai_response = trim($response_data['candidates'][0]['content']['parts'][0]['text']);
-    echo json_encode([]);
+    echo json_encode(['response' => $ai_response]);
 ?>
